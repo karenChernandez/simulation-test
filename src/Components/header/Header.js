@@ -6,21 +6,23 @@ import {Link} from 'react-router-dom'
 function Header (){
 
 
-    return(
-        <h1>SHELFIE</h1>
+    return(<div className='header'>
 
-        <nav>
-            <ul>
-                <li>
+        <h3>SHELFIE</h3>
+
+        <nav className='menu'>
+            
+            
                     <Link to="/">Dashboard</Link>
-                </li>
-                <li>
+                
+                
                     <Link to="/AddInv">Add Inventory</Link>
-                </li>
-            </ul>
+                
+            
         </nav>
+    </div>
 
 
     )
 }
-export default Header:
+export default Header;

@@ -19,7 +19,7 @@ massive({
 
 app.get('/api/boots', bootsCtrl.getBoots);
 app.post('/api/boots', bootsCtrl.addBoots);
-
+app.delete(`/api/boots/:id`, bootsCtrl.deleteBoots);
 
 app.listen(port, () => console.log(`Server listening up on port: ${port}`))
 
